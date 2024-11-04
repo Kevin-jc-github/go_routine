@@ -42,13 +42,13 @@ The code has been enhanced to:
 The program includes a `runPipeline` function that is used to execute the image processing steps. By passing the appropriate command-line argument, you can run the program with or without goroutines and measure the elapsed time for each configuration. 
 
 ## Getting Started
-# Prerequisites
+### Prerequisites
 - Go: Ensure you have Go (version 1.16 or later) installed on your system.
 - Image Files: Place your image files in an images/ directory. The output images will be saved in images/output/.
 
 
 ##  Installation
-## Clone the Repository:
+### Clone the Repository:
 https://github.com/Kevin-jc-github/go_routine.git
 cd go_routine
 
@@ -62,7 +62,7 @@ go run main.go goroutines
 go run main.go
 
 ## The following output demonstrates the difference in processing times with and without goroutines:
-## Running with goroutines:
+### Running with goroutines:
 Success!
 
 Success!
@@ -75,7 +75,7 @@ Pipeline completed in 10ms
 
 
 
-## Running without goroutines:
+### Running without goroutines:
 Success!
 
 Success!
@@ -89,18 +89,18 @@ Pipeline completed in 30ms
 
 
 ## Benchmarking
-## To benchmark the performance of the pipeline with and without goroutines, run the following command:
+### To benchmark the performance of the pipeline with and without goroutines, run the following command:
 go test -bench 
 
 This will provide a comparative measure of the processing times in each mode.
 
 ## Unit Testing
-## Unit tests are provided in the image_process_test.go file to verify each stage of the image processing pipeline.
+### Unit tests are provided in the image_process_test.go file to verify each stage of the image processing pipeline.
 
-## To run the tests:
+### To run the tests:
 go test -v
 
-## Test Coverage
+### Test Coverage
 The unit tests verify the following:
 
 - Loading Images: Ensures images are read properly without errors.
