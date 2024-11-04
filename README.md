@@ -45,16 +45,6 @@ The code has been enhanced to:
 ### 7. Build, Test, and Run the Pipeline with and Without Goroutines
 The program includes a `runPipeline` function that is used to execute the image processing steps. By passing the appropriate command-line argument, you can run the program with or without goroutines and measure the elapsed time for each configuration. 
 
----
-
-## Project Structure
-.
-├── image_processing/
-│   ├── image_process.go          # Contains image processing functions
-│   └── image_process_test.go     # Unit tests for image processing functions
-├── main.go                       # Main pipeline implementation
-└── README.md                     # Project documentation
-
 ## Getting Started
 # Prerequisites
 - Go: Ensure you have Go (version 1.16 or later) installed on your system.
@@ -62,21 +52,21 @@ The program includes a `runPipeline` function that is used to execute the image 
 
 
 ##  Installation
-# Clone the Repository:
+## Clone the Repository:
 https://github.com/Kevin-jc-github/go_routine.git
 cd go_routine
 
-# Run with Goroutines:
+## Run with Goroutines:
 
 go run main.go goroutines
 
 
-# Run without Goroutines:
+## Run without Goroutines:
 
 go run main.go
 
 ## The following output demonstrates the difference in processing times with and without goroutines:
-# Running with goroutines:
+## Running with goroutines:
 Success!
 
 Success!
@@ -89,7 +79,7 @@ Pipeline completed in 10ms
 
 
 
-# Running without goroutines:
+## Running without goroutines:
 Success!
 
 Success!
@@ -103,24 +93,24 @@ Pipeline completed in 30ms
 
 
 ## Benchmarking
-# To benchmark the performance of the pipeline with and without goroutines, run the following command:
+## To benchmark the performance of the pipeline with and without goroutines, run the following command:
 go test -bench 
 
 This will provide a comparative measure of the processing times in each mode.
 
 ## Unit Testing
-# Unit tests are provided in the image_process_test.go file to verify each stage of the image processing pipeline.
+## Unit tests are provided in the image_process_test.go file to verify each stage of the image processing pipeline.
 
-# To run the tests:
+## To run the tests:
 go test -v
 
 ## Test Coverage
 The unit tests verify the following:
 
-Loading Images: Ensures images are read properly without errors.
+- Loading Images: Ensures images are read properly without errors.
 
-Resizing Images: Verifies that the images are resized correctly to 500x500.
+- Resizing Images: Verifies that the images are resized correctly to 500x500.
 
-Converting to Grayscale: Confirms the image is correctly converted to grayscale.
+- Converting to Grayscale: Confirms the image is correctly converted to grayscale.
 
-Saving Images: Tests that processed images are saved successfully.
+- Saving Images: Tests that processed images are saved successfully.
