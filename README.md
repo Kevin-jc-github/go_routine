@@ -82,19 +82,30 @@ Success!
 Success!
 
 Success!
+
 Success!
+
 Pipeline completed in 10ms
+
+
 
 # Running without goroutines:
 Success!
+
 Success!
+
 Success!
+
 Success!
+
 Pipeline completed in 30ms
+
+
 
 ## Benchmarking
 # To benchmark the performance of the pipeline with and without goroutines, run the following command:
-go test -bench .
+go test -bench 
+
 This will provide a comparative measure of the processing times in each mode.
 
 ## Unit Testing
@@ -105,7 +116,11 @@ go test -v
 
 ## Test Coverage
 The unit tests verify the following:
+
 Loading Images: Ensures images are read properly without errors.
+
 Resizing Images: Verifies that the images are resized correctly to 500x500.
+
 Converting to Grayscale: Confirms the image is correctly converted to grayscale.
+
 Saving Images: Tests that processed images are saved successfully.
