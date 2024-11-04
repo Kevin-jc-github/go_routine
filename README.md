@@ -10,10 +10,6 @@ This project is an image processing pipeline implemented in Go. It reads images,
 - **Image Saving**: Saves processed images to a new output directory.
 - **Concurrency Toggle**: Choose to run the pipeline with or without goroutines.
 
----
-
-## Requirements and How They Are Met
-
 ### 1. Add Error Checking for Image File Input and Output
 Error checking has been added to both the `ReadImage` and `WriteImage` functions. When an error occurs during image loading or saving, the function returns an error instead of panicking. This ensures that errors are properly logged and handled gracefully without crashing the program.
 
