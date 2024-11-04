@@ -78,7 +78,9 @@ go run main.go
 ## The following output demonstrates the difference in processing times with and without goroutines:
 # Running with goroutines:
 Success!
+
 Success!
+
 Success!
 Success!
 Pipeline completed in 10ms
